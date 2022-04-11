@@ -1,0 +1,12 @@
+#find factorial of a number using recursion
+def fact(n):
+  if n==0:
+    return 1
+   else:
+    return num*fact(num-1)
+n=int(input("Enter a number:"))
+f=fact(n)
+if f:
+  print(f"factorial={f}")
+else:
+  print(f"factorial={f}")
