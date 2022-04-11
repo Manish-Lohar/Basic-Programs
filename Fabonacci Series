@@ -1,0 +1,15 @@
+#Fabonacci Series
+n1,n2=0,1
+nth_term=int(input("How many terms:"))
+if nth_term==0:
+  print("Enter a positive number.")
+ elif nth_term==1:
+  print(f"Fabonacci Sequence upto {nth_term}: {n1}")
+ else:
+  print("Fabonacci sequence:")
+  for i in range(nth_term):
+    print(n1)
+    s=n1+n2
+    n1=n2
+    n2=s
+    
