@@ -1,0 +1,14 @@
+def auto(n):
+  sq=n*n
+  while n>0:
+    if sq%10!=n%10:
+      return False
+    sq//=10
+    n//=10
+  return True
+n=int(input())
+p=auto(n)
+if p:
+  print(f"{n} is automorphic")
+else:
+  print(f"{n} is not automorphic")
