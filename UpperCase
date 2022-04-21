@@ -13,3 +13,9 @@ while i<=len(str)-1:
     newstr=newstr+data
   i+=1
 print(newstr)
+
+
+#alternative method
+str=input()
+newstr=str.upper()
+print(newstr)
