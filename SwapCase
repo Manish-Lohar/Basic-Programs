@@ -1,0 +1,22 @@
+#SwapCase Program
+str=input("Enter a string:")
+i=0
+newstr=" "
+while i<len(str):
+  data=str[i]
+  asciivalue=ord(data)
+  if asciivalue>=65 and asciivalue<=90:
+    asciivalue=asciivalue+32
+    data=chr(asciivalue)
+    newstr=newstr+data
+  else:
+    asciivalue=asciivalue-32
+    data=chr(asciivalue)
+    newstr=newstr+data
+  i+=1
+print(newstr)
+
+#alter method
+str=input()
+newstr=str.swapcase()
+print(newstr)
